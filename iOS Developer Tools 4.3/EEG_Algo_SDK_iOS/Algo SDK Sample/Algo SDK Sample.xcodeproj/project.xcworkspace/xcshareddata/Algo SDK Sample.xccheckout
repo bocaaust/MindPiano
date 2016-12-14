@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6282B079-BAC8-4078-937A-4359C3CC2EC9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Algo SDK Sample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>516697706E95E9C84EA1BBC1372D9DF47CD1A669</key>
+		<string>192.168.1.103:/volume1/git_repos/Project_SDK</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Algo_SDK/Source/Platforms/iOS/Algo SDK Sample/Algo SDK Sample.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>516697706E95E9C84EA1BBC1372D9DF47CD1A669</key>
+		<string>../../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>192.168.1.103:/volume1/git_repos/Project_SDK</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>516697706E95E9C84EA1BBC1372D9DF47CD1A669</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>516697706E95E9C84EA1BBC1372D9DF47CD1A669</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Project_SDK</string>
+		</dict>
+	</array>
+</dict>
+</plist>
