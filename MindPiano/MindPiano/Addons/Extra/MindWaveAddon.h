@@ -25,6 +25,14 @@
 -(void)eegPowerDelta:(int)delta Theta:(int)theta LowAlpha:(int)lowAlpha HighAlpha:(int)highAlpha;
 -(void)eegPowerLowBeta:(int)lowBeta HighBeta:(int)highBeta LowGamma:(int)lowGamma
               MidGamma:(int)midGamma;
+-(void)didConnect;
+-(void)didDisconnect;
+
+-(void)connectDevice:(NSString *)deviceID;
+//disconnect
+-(void)disconnectDevice;
+//Device found
+-(void)deviceFound:(NSString *)devName MfgID:(NSString *)mfgID DeviceID:(NSString *)deviceID;
 
 @end
 

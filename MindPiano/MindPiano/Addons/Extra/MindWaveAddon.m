@@ -45,6 +45,15 @@ static int luaopen_mindwave(lua_State *L)
     return 1;
 }
 
+#pragma mark - Game Center Addon
+
+@interface MindWaveAddon ()<MWMDelegate>
+
+@end
+
+@implementation MindWaveAddon
+
+
 #pragma mark - Singleton
 
 + (instancetype) sharedInstance
@@ -77,3 +86,12 @@ static int luaopen_mindwave(lua_State *L)
     }
     return self;
 }
+
+
+#pragma mark - Mind Wave Helper Methods
+
+
+
+
+@end
+
