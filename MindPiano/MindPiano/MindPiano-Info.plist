@@ -11,7 +11,7 @@
 	<key>CFBundleIcons</key>
 	<dict/>
 	<key>CFBundleIdentifier</key>
-	<string>com.AustinLubetkin.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -51,6 +51,11 @@
 	<false/>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleLightContent</string>
+	<key>UISupportedExternalAccessoryProtocols</key>
+	<array>
+		<string>com.neurosky.thinkgear</string>
+		<string>com.neurosky.cardio</string>
+	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
@@ -63,10 +68,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>UISupportedExternalAccessoryProtocols</key>
-	<array>
-		<string>com.neurosky.thinkgear</string>
-		<string>com.neurosky.cardio</string>
-	</array>
 </dict>
 </plist>

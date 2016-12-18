@@ -44,3 +44,36 @@ static int luaopen_mindwave(lua_State *L)
     
     return 1;
 }
+
+#pragma mark - Singleton
+
++ (instancetype) sharedInstance
+{
+    static id _sharedObject = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _sharedObject = [[self alloc] init];
+    });
+    return _sharedObject;
+}
+
+#pragma mark - Initialisation
+
+- (id)init
+{
+    self = [super init];
+    if (self)
+    {
+        // Initialise our Instance Variables
+        _mindwaveEnabled = NO;
+        _isBlinking = NO;
+        _attention = 0;
+        
+        // Initialize Device
+        
+        mwDevice = [MWMDevice sharedInstance];
+        [mwDevice setDelegate:self];
+        
+    }
+    return self;
+}

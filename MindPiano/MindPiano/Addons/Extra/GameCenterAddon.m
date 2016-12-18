@@ -25,8 +25,6 @@
 
 static int gamecenter_enabled(struct lua_State* L);
 
-static int is_blink(struct lua_State* L);
-
 static int gamecenter_showLeaderboards(struct lua_State* L);
 static int gamecenter_showAchievements(struct lua_State* L);
 
