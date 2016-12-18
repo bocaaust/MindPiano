@@ -280,8 +280,8 @@
 				DBF0F5A81A3D0B78007693C1 /* iAdsAddon.h */,
 				DBCE375E19E9F77800E382EC /* GameCenterAddon.h */,
 				FC7311691E06481E006E0B7B /* MindWaveAddon.m */,
-				FC73116B1E064831006E0B7B /* MindWaveAddon.h */,
 				DBCE375F19E9F77800E382EC /* GameCenterAddon.m */,
+				FC73116B1E064831006E0B7B /* MindWaveAddon.h */,
 			);
 			path = Extra;
 			sourceTree = "<group>";

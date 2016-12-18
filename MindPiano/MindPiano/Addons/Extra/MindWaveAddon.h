@@ -16,6 +16,7 @@
 
 + (instancetype) sharedInstance;
 
+@property (nonatomic, assign) BOOL mindwaveEnabled;
 @property (nonatomic, assign) BOOL isBlinking;
 @property (nonatomic, assign) int attention;
 
