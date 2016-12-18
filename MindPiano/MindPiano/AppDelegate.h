@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+//#import "MindWaveAddon.h"
 
 @class StandaloneCodeaViewController;
 
@@ -15,5 +16,7 @@
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) StandaloneCodeaViewController *viewController;
+
+//@property (strong, nonatomic) MindWaveAddOn *MindWaveAddOn;
 
 @end

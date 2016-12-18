@@ -57,6 +57,7 @@
 		DBF0F5A91A3D0B78007693C1 /* iAdsAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF0F5A71A3D0B78007693C1 /* iAdsAddon.m */; };
 		FC5323C91E0100BF0066A1B3 /* libMWMSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5323C51E0100BF0066A1B3 /* libMWMSDK.a */; };
 		FC5323CB1E0100EB0066A1B3 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5323CA1E0100EB0066A1B3 /* ExternalAccessory.framework */; };
+		FC73116A1E06481E006E0B7B /* MindWaveAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7311691E06481E006E0B7B /* MindWaveAddon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +128,8 @@
 		FC5323C71E0100BF0066A1B3 /* MWMDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMDevice.h; sourceTree = "<group>"; };
 		FC5323C81E0100BF0066A1B3 /* MWMEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMEnum.h; sourceTree = "<group>"; };
 		FC5323CA1E0100EB0066A1B3 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		FC7311691E06481E006E0B7B /* MindWaveAddon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MindWaveAddon.m; sourceTree = "<group>"; };
+		FC73116B1E064831006E0B7B /* MindWaveAddon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MindWaveAddon.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,6 +279,8 @@
 				DBF0F5A71A3D0B78007693C1 /* iAdsAddon.m */,
 				DBF0F5A81A3D0B78007693C1 /* iAdsAddon.h */,
 				DBCE375E19E9F77800E382EC /* GameCenterAddon.h */,
+				FC7311691E06481E006E0B7B /* MindWaveAddon.m */,
+				FC73116B1E064831006E0B7B /* MindWaveAddon.h */,
 				DBCE375F19E9F77800E382EC /* GameCenterAddon.m */,
 			);
 			path = Extra;
@@ -418,6 +423,7 @@
 				DBF0F5A91A3D0B78007693C1 /* iAdsAddon.m in Sources */,
 				DB8A005316F2DBDA005F87A6 /* main.m in Sources */,
 				DB8A005716F2DBDA005F87A6 /* AppDelegate.mm in Sources */,
+				FC73116A1E06481E006E0B7B /* MindWaveAddon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

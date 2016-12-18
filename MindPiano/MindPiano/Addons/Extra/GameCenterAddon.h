@@ -50,7 +50,6 @@
 + (instancetype) sharedInstance;
 
 @property (nonatomic, assign) BOOL gameCenterEnabled;
-@property (nonatomic, assign) BOOL isBlinking;
 @property (nonatomic, strong) NSString *defaultLeaderboard;
 
 @end

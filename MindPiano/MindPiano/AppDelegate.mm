@@ -10,9 +10,11 @@
 
 #import "StandaloneCodeaViewController.h"
 
-#import "GameCenterAddon.h"
+//#import "GameCenterAddon.h"
 
-#import "MWMDevice.h"
+#import "MindWaveAddon.h"
+
+
 
 @implementation AppDelegate
 
@@ -29,6 +31,7 @@
     
     //See GameCenterAddon.h for the Lua API description.
     
+    [self.viewController registerAddon:[MindWaveAddon sharedInstance]];
     
     
     
