@@ -12,15 +12,33 @@
 
 #import "CodeaAddon.h"
 
-@interface MindWaveAddon : CodeaAddon<MWMDelegate>
+// The merged MWM instance
+#import "MWMDelegate.h"
+#import "MWMDevice.h"
+
+@interface MindWaveAddon : CodeaAddon<MWMDelegate,UIPickerViewDelegate,UIPickerViewDataSource>{
+    //BOOL mindwaveEnabled;
+  // int isBlinking;
+    int attentionValue;
+    MWMDevice *mwDevice;
+    NSArray *devicesArray;
+    NSMutableArray *tempDevicesArray;
+    
+    NSMutableArray *candidateIdArray;
+    NSMutableArray *devNameArray;
+    NSMutableArray *mfgIDArray;
+    
+    //There's two types devices
+    NSMutableArray *deviceTypeArray;
+}
 
 + (instancetype) sharedInstance;
 
-@property (nonatomic, assign) BOOL mindwaveEnabled;
-@property (nonatomic, assign) BOOL isBlinking;
-@property (nonatomic, assign) int attention;
+@property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
+@property (weak, nonatomic) IBOutlet UIPickerView *devicePicker;
+@property (nonatomic, retain) NSArray *devicesArray;
 
--(void)eegSample:(int) sample;
+//-(void)eegSample:(int) sample;
 -(void)eSense:(int)poorSignal Attention:(int)attention Meditation:(int)meditation;
 -(void)eegPowerDelta:(int)delta Theta:(int)theta LowAlpha:(int)lowAlpha HighAlpha:(int)highAlpha;
 -(void)eegPowerLowBeta:(int)lowBeta HighBeta:(int)highBeta LowGamma:(int)lowGamma
@@ -28,9 +46,9 @@
 -(void)didConnect;
 -(void)didDisconnect;
 
--(void)connectDevice:(NSString *)deviceID;
+//-(void)connectDevice:(NSString *)deviceID;
 //disconnect
--(void)disconnectDevice;
+//-(void)disconnectDevice;
 //Device found
 -(void)deviceFound:(NSString *)devName MfgID:(NSString *)mfgID DeviceID:(NSString *)deviceID;
 
