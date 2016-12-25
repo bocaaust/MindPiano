@@ -24,11 +24,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MindPiano/Addons/Extra/MindWaveAddon.m"
-            timestampString = "504253683.580614"
+            timestampString = "504325661.892502"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "1089"
+            endingLineNumber = "1089"
+            landmarkName = "@implementation MindWaveAddon"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MindPiano/Addons/Extra/MindWaveAddon.m"
+            timestampString = "504323539.44288"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "339"
+            endingLineNumber = "339"
+            landmarkName = "@implementation MindWaveAddon"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MindPiano/Addons/Extra/MindWaveAddon.m"
+            timestampString = "504323701.286715"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "531"
+            endingLineNumber = "531"
             landmarkName = "@implementation MindWaveAddon"
             landmarkType = "3">
          </BreakpointContent>

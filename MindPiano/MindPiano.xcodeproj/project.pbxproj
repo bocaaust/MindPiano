@@ -20,8 +20,6 @@
 		DB8A005116F2DBDA005F87A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB8A004F16F2DBDA005F87A6 /* InfoPlist.strings */; };
 		DB8A005316F2DBDA005F87A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8A005216F2DBDA005F87A6 /* main.m */; };
 		DB8A005716F2DBDA005F87A6 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = DB8A005616F2DBDA005F87A6 /* AppDelegate.mm */; };
-		DB8A006816F2E019005F87A6 /* libcodea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A006316F2E019005F87A6 /* libcodea.a */; };
-		DB8A006A16F2E019005F87A6 /* libtools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A006516F2E019005F87A6 /* libtools.a */; };
 		DB8A006B16F2E019005F87A6 /* RuntimeResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DB8A006616F2E019005F87A6 /* RuntimeResources.bundle */; };
 		DB8A006C16F2E019005F87A6 /* ToolsResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DB8A006716F2E019005F87A6 /* ToolsResources.bundle */; };
 		DB8A006F16F2E039005F87A6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A006E16F2E039005F87A6 /* QuartzCore.framework */; };
@@ -57,6 +55,9 @@
 		FC5323C91E0100BF0066A1B3 /* libMWMSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5323C51E0100BF0066A1B3 /* libMWMSDK.a */; };
 		FC5323CB1E0100EB0066A1B3 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5323CA1E0100EB0066A1B3 /* ExternalAccessory.framework */; };
 		FC690C5A1E0E5E5300CE783B /* AlgoSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC690C591E0E5E5300CE783B /* AlgoSdk.framework */; };
+		FC690C5C1E0F553B00CE783B /* StreamSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC690C5B1E0F553B00CE783B /* StreamSDK.a */; };
+		FC690C631E0F65ED00CE783B /* libcodea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC690C621E0F65ED00CE783B /* libcodea.a */; };
+		FC690C651E0F65F700CE783B /* libtools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC690C641E0F65F700CE783B /* libtools.a */; };
 		FC73116A1E06481E006E0B7B /* MindWaveAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7311691E06481E006E0B7B /* MindWaveAddon.m */; };
 /* End PBXBuildFile section */
 
@@ -78,8 +79,6 @@
 		DB8A005416F2DBDA005F87A6 /* MindPiano-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MindPiano-Prefix.pch"; sourceTree = "<group>"; };
 		DB8A005516F2DBDA005F87A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DB8A005616F2DBDA005F87A6 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
-		DB8A006316F2E019005F87A6 /* libcodea.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcodea.a; path = Libs/libcodea.a; sourceTree = "<group>"; };
-		DB8A006516F2E019005F87A6 /* libtools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtools.a; path = Libs/libtools.a; sourceTree = "<group>"; };
 		DB8A006616F2E019005F87A6 /* RuntimeResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = RuntimeResources.bundle; path = Libs/RuntimeResources.bundle; sourceTree = "<group>"; };
 		DB8A006716F2E019005F87A6 /* ToolsResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ToolsResources.bundle; path = Libs/ToolsResources.bundle; sourceTree = "<group>"; };
 		DB8A006E16F2E039005F87A6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -128,6 +127,13 @@
 		FC5323C81E0100BF0066A1B3 /* MWMEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMEnum.h; sourceTree = "<group>"; };
 		FC5323CA1E0100EB0066A1B3 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		FC690C591E0E5E5300CE783B /* AlgoSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlgoSdk.framework; sourceTree = "<group>"; };
+		FC690C5B1E0F553B00CE783B /* StreamSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = StreamSDK.a; sourceTree = "<group>"; };
+		FC690C5E1E0F573C00CE783B /* TGSEEGPower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGSEEGPower.h; sourceTree = "<group>"; };
+		FC690C5F1E0F573C00CE783B /* TGStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGStream.h; sourceTree = "<group>"; };
+		FC690C601E0F573C00CE783B /* TGStreamDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGStreamDelegate.h; sourceTree = "<group>"; };
+		FC690C611E0F573C00CE783B /* TGStreamEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGStreamEnum.h; sourceTree = "<group>"; };
+		FC690C621E0F65ED00CE783B /* libcodea.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcodea.a; path = Libs/libcodea.a; sourceTree = "<group>"; };
+		FC690C641E0F65F700CE783B /* libtools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtools.a; path = Libs/libtools.a; sourceTree = "<group>"; };
 		FC7311691E06481E006E0B7B /* MindWaveAddon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MindWaveAddon.m; sourceTree = "<group>"; };
 		FC73116B1E064831006E0B7B /* MindWaveAddon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MindWaveAddon.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +143,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC690C651E0F65F700CE783B /* libtools.a in Frameworks */,
+				FC690C631E0F65ED00CE783B /* libcodea.a in Frameworks */,
 				FC5323C91E0100BF0066A1B3 /* libMWMSDK.a in Frameworks */,
 				FC5323CB1E0100EB0066A1B3 /* ExternalAccessory.framework in Frameworks */,
 				DBE0BEA31A8B693D0010DC06 /* iAd.framework in Frameworks */,
@@ -162,11 +170,10 @@
 				DB8A007716F2E084005F87A6 /* OpenAL.framework in Frameworks */,
 				DB8A007516F2E073005F87A6 /* libicucore.dylib in Frameworks */,
 				DB8A007116F2E069005F87A6 /* CoreMotion.framework in Frameworks */,
+				FC690C5C1E0F553B00CE783B /* StreamSDK.a in Frameworks */,
 				DB8A006F16F2E039005F87A6 /* QuartzCore.framework in Frameworks */,
 				DB8A004716F2DBDA005F87A6 /* UIKit.framework in Frameworks */,
 				DB8A004916F2DBDA005F87A6 /* Foundation.framework in Frameworks */,
-				DB8A006816F2E019005F87A6 /* libcodea.a in Frameworks */,
-				DB8A006A16F2E019005F87A6 /* libtools.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +201,9 @@
 		DB8A004516F2DBDA005F87A6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FC690C641E0F65F700CE783B /* libtools.a */,
+				FC690C621E0F65ED00CE783B /* libcodea.a */,
+				FC690C5B1E0F553B00CE783B /* StreamSDK.a */,
 				FC690C591E0E5E5300CE783B /* AlgoSdk.framework */,
 				FC5323CA1E0100EB0066A1B3 /* ExternalAccessory.framework */,
 				DBE0BEA21A8B693D0010DC06 /* iAd.framework */,
@@ -201,8 +211,6 @@
 				DB0DC0B918C4608E005F4723 /* Accelerate.framework */,
 				DB0DC0B718C4608A005F4723 /* CoreLocation.framework */,
 				DB0DC0B518C46085005F4723 /* CoreImage.framework */,
-				DB8A006316F2E019005F87A6 /* libcodea.a */,
-				DB8A006516F2E019005F87A6 /* libtools.a */,
 				DB8A006616F2E019005F87A6 /* RuntimeResources.bundle */,
 				DB8A006716F2E019005F87A6 /* ToolsResources.bundle */,
 				DB3B3F6217815CFE00A992DB /* Security.framework */,
@@ -240,6 +248,7 @@
 				DB8A005616F2DBDA005F87A6 /* AppDelegate.mm */,
 				DB8A009F16F2E859005F87A6 /* Resources */,
 				DB0DC0AD18C459EC005F4723 /* Images.xcassets */,
+				FC690C5D1E0F570100CE783B /* COMM_SDK */,
 				DB8A004D16F2DBDA005F87A6 /* Supporting Files */,
 			);
 			path = MindPiano;
@@ -318,6 +327,17 @@
 				FC5323C81E0100BF0066A1B3 /* MWMEnum.h */,
 			);
 			name = libn;
+			sourceTree = "<group>";
+		};
+		FC690C5D1E0F570100CE783B /* COMM_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				FC690C5E1E0F573C00CE783B /* TGSEEGPower.h */,
+				FC690C5F1E0F573C00CE783B /* TGStream.h */,
+				FC690C601E0F573C00CE783B /* TGStreamDelegate.h */,
+				FC690C611E0F573C00CE783B /* TGStreamEnum.h */,
+			);
+			name = COMM_SDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -536,11 +556,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MindPiano/MindPiano-Prefix.pch";
 				INFOPLIST_FILE = "MindPiano/MindPiano-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Libs\"",
 					"$(PROJECT_DIR)/MindPiano",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Libs",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -566,11 +588,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MindPiano/MindPiano-Prefix.pch";
 				INFOPLIST_FILE = "MindPiano/MindPiano-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Libs\"",
 					"$(PROJECT_DIR)/MindPiano",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Libs",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
