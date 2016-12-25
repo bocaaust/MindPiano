@@ -64,6 +64,8 @@ end
 
 -- This function gets called once every frame
 function draw()
+    current = math.floor(mindwave.attention()/88)
+    isBlink = mindwave.isBlink()
     -- This sets a dark background color
     background(199, 212, 203, 255)
     
