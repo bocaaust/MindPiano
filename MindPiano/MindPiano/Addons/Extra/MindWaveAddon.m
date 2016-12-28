@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MWMDevice.h"
+//#import "MWMDevice.h"
 
 #import "MindWaveAddon.h"
 
@@ -95,7 +95,7 @@ static int luaopen_mindwave(lua_State *L)
 
 #pragma mark - Initialisation
 
-- (id)init
+/*- (id)init
 {
     self = [super init];
     if (self)
@@ -130,7 +130,7 @@ static int luaopen_mindwave(lua_State *L)
         
     }
     return self;
-}
+}*/
 
 
 #pragma mark - Mind Wave Helper Methods
@@ -265,12 +265,12 @@ PLOT_PARAM defaultPlotParam[SegmentMax] = {
     }
       */
     if (algoTypes == 0) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+       /* UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
                                                         message:@"Please select at least ONE algorithm"
                                                        delegate:nil
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];
-        [alert show];
+        [alert show];*/
     } else {
         int ret;
         NskAlgoSdk *handle = [NskAlgoSdk sharedInstance];
@@ -318,7 +318,9 @@ PLOT_PARAM defaultPlotParam[SegmentMax] = {
     }
 }
 */
+
 - (IBAction)startPausePress:(id)sender {
+    bPaused = YES;
     if (bPaused) {
         [[NskAlgoSdk sharedInstance] startProcess];
     } else {

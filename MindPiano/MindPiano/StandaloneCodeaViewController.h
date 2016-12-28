@@ -6,7 +6,7 @@
 //  Copyright (c) <#AuthorName#>. All rights reserved.
 //
 
-#import "MWMDevice.h"
+//#import "MWMDevice.h"
 
 #import <UIKit/UIKit.h>
 
@@ -21,7 +21,7 @@ typedef enum CodeaViewMode
 
 @protocol CodeaAddon;
 
-@interface StandaloneCodeaViewController : UIViewController<MWMDelegate>
+@interface StandaloneCodeaViewController : UIViewController
 
 @property (nonatomic, assign) CodeaViewMode viewMode;
 @property (nonatomic, assign) BOOL paused;

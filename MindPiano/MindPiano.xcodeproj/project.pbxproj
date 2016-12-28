@@ -44,15 +44,12 @@
 		DB8A00A716F2E859005F87A6 /* SourceSansPro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB8A00A316F2E859005F87A6 /* SourceSansPro-Semibold.otf */; };
 		DB8A015C16F73DFF005F87A6 /* MindPiano.codea in Resources */ = {isa = PBXBuildFile; fileRef = DB8A015B16F73DFF005F87A6 /* MindPiano.codea */; };
 		DBC21B9719EBF2B000CD519E /* CodeaAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC21B9619EBF2B000CD519E /* CodeaAddon.m */; };
-		DBC21B9C19ED75A000CD519E /* GameCenterAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCE375F19E9F77800E382EC /* GameCenterAddon.m */; };
 		DBE0BEA31A8B693D0010DC06 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE0BEA21A8B693D0010DC06 /* iAd.framework */; };
 		DBEA4FC31BC23A0200000A55 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC21BC23A0200000A55 /* Launch Screen.storyboard */; };
 		DBEA4FC81BC243D800000A55 /* LaunchBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC41BC243D800000A55 /* LaunchBackground.png */; };
 		DBEA4FC91BC243D800000A55 /* LaunchLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC51BC243D800000A55 /* LaunchLogo.png */; };
 		DBEA4FCA1BC243D800000A55 /* LaunchLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC61BC243D800000A55 /* LaunchLogo@2x.png */; };
 		DBEA4FCB1BC243D800000A55 /* LaunchLogo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC71BC243D800000A55 /* LaunchLogo@3x.png */; };
-		DBF0F5A91A3D0B78007693C1 /* iAdsAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF0F5A71A3D0B78007693C1 /* iAdsAddon.m */; };
-		FC5323C91E0100BF0066A1B3 /* libMWMSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5323C51E0100BF0066A1B3 /* libMWMSDK.a */; };
 		FC5323CB1E0100EB0066A1B3 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5323CA1E0100EB0066A1B3 /* ExternalAccessory.framework */; };
 		FC690C5C1E0F553B00CE783B /* StreamSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC690C5B1E0F553B00CE783B /* StreamSDK.a */; };
 		FC690C631E0F65ED00CE783B /* libcodea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC690C621E0F65ED00CE783B /* libcodea.a */; };
@@ -120,16 +117,12 @@
 		DB8A00A316F2E859005F87A6 /* SourceSansPro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Semibold.otf"; sourceTree = "<group>"; };
 		DB8A015B16F73DFF005F87A6 /* MindPiano.codea */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MindPiano.codea; sourceTree = "<group>"; };
 		DBC21B9619EBF2B000CD519E /* CodeaAddon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeaAddon.m; sourceTree = "<group>"; };
-		DBCE375E19E9F77800E382EC /* GameCenterAddon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterAddon.h; sourceTree = "<group>"; };
-		DBCE375F19E9F77800E382EC /* GameCenterAddon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterAddon.m; sourceTree = "<group>"; };
 		DBE0BEA21A8B693D0010DC06 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		DBEA4FC21BC23A0200000A55 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		DBEA4FC41BC243D800000A55 /* LaunchBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchBackground.png; sourceTree = "<group>"; };
 		DBEA4FC51BC243D800000A55 /* LaunchLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchLogo.png; sourceTree = "<group>"; };
 		DBEA4FC61BC243D800000A55 /* LaunchLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchLogo@2x.png"; sourceTree = "<group>"; };
 		DBEA4FC71BC243D800000A55 /* LaunchLogo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchLogo@3x.png"; sourceTree = "<group>"; };
-		DBF0F5A71A3D0B78007693C1 /* iAdsAddon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iAdsAddon.m; sourceTree = "<group>"; };
-		DBF0F5A81A3D0B78007693C1 /* iAdsAddon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAdsAddon.h; sourceTree = "<group>"; };
 		DBF44365170F00F20026A109 /* CodeaAddon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeaAddon.h; sourceTree = "<group>"; };
 		DBF44367170F02580026A109 /* lapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lapi.h; sourceTree = "<group>"; };
 		DBF44368170F02580026A109 /* lauxlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lauxlib.h; sourceTree = "<group>"; };
@@ -137,10 +130,6 @@
 		DBF4436A170F02580026A109 /* lobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lobject.h; sourceTree = "<group>"; };
 		DBF4436B170F02580026A109 /* lua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua.h; sourceTree = "<group>"; };
 		DBF4436C170F02580026A109 /* luaconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = luaconf.h; sourceTree = "<group>"; };
-		FC5323C51E0100BF0066A1B3 /* libMWMSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMWMSDK.a; sourceTree = "<group>"; };
-		FC5323C61E0100BF0066A1B3 /* MWMDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMDelegate.h; sourceTree = "<group>"; };
-		FC5323C71E0100BF0066A1B3 /* MWMDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMDevice.h; sourceTree = "<group>"; };
-		FC5323C81E0100BF0066A1B3 /* MWMEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMEnum.h; sourceTree = "<group>"; };
 		FC5323CA1E0100EB0066A1B3 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		FC690C591E0E5E5300CE783B /* AlgoSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlgoSdk.framework; sourceTree = "<group>"; };
 		FC690C5B1E0F553B00CE783B /* StreamSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = StreamSDK.a; sourceTree = "<group>"; };
@@ -163,7 +152,6 @@
 				FCF91C651E10B4EE0087F2A5 /* AlgoSdk.framework in Frameworks */,
 				FC690C651E0F65F700CE783B /* libtools.a in Frameworks */,
 				FC690C631E0F65ED00CE783B /* libcodea.a in Frameworks */,
-				FC5323C91E0100BF0066A1B3 /* libMWMSDK.a in Frameworks */,
 				FC5323CB1E0100EB0066A1B3 /* ExternalAccessory.framework in Frameworks */,
 				DBE0BEA31A8B693D0010DC06 /* iAd.framework in Frameworks */,
 				DB5E404418CD80570001CC1F /* Social.framework in Frameworks */,
@@ -208,6 +196,7 @@
 				DB8A004416F2DBDA005F87A6 /* Products */,
 			);
 			sourceTree = "<group>";
+			wrapsLines = 0;
 		};
 		DB8A004416F2DBDA005F87A6 /* Products */ = {
 			isa = PBXGroup;
@@ -259,7 +248,6 @@
 		DB8A004C16F2DBDA005F87A6 /* MindPiano */ = {
 			isa = PBXGroup;
 			children = (
-				FC5323C41E0100940066A1B3 /* libn */,
 				DBF44366170F02580026A109 /* Lua */,
 				DBF44364170F00F20026A109 /* Addons */,
 				DB8A008E16F2E166005F87A6 /* StandaloneCodeaViewController.h */,
@@ -304,11 +292,7 @@
 		DBCE375D19E9F74E00E382EC /* Extra */ = {
 			isa = PBXGroup;
 			children = (
-				DBF0F5A71A3D0B78007693C1 /* iAdsAddon.m */,
-				DBF0F5A81A3D0B78007693C1 /* iAdsAddon.h */,
-				DBCE375E19E9F77800E382EC /* GameCenterAddon.h */,
 				FC7311691E06481E006E0B7B /* MindWaveAddon.m */,
-				DBCE375F19E9F77800E382EC /* GameCenterAddon.m */,
 				FC73116B1E064831006E0B7B /* MindWaveAddon.h */,
 			);
 			path = Extra;
@@ -335,17 +319,6 @@
 				DBF4436C170F02580026A109 /* luaconf.h */,
 			);
 			path = Lua;
-			sourceTree = "<group>";
-		};
-		FC5323C41E0100940066A1B3 /* libn */ = {
-			isa = PBXGroup;
-			children = (
-				FC5323C51E0100BF0066A1B3 /* libMWMSDK.a */,
-				FC5323C61E0100BF0066A1B3 /* MWMDelegate.h */,
-				FC5323C71E0100BF0066A1B3 /* MWMDevice.h */,
-				FC5323C81E0100BF0066A1B3 /* MWMEnum.h */,
-			);
-			name = libn;
 			sourceTree = "<group>";
 		};
 		FC690C5D1E0F570100CE783B /* COMM_SDK */ = {
@@ -464,8 +437,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBC21B9719EBF2B000CD519E /* CodeaAddon.m in Sources */,
-				DBC21B9C19ED75A000CD519E /* GameCenterAddon.m in Sources */,
-				DBF0F5A91A3D0B78007693C1 /* iAdsAddon.m in Sources */,
 				DB8A005316F2DBDA005F87A6 /* main.m in Sources */,
 				DB8A005716F2DBDA005F87A6 /* AppDelegate.mm in Sources */,
 				FC73116A1E06481E006E0B7B /* MindWaveAddon.m in Sources */,
@@ -569,15 +540,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = GP8729KYLX;
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MindPiano/MindPiano-Prefix.pch";
 				INFOPLIST_FILE = "MindPiano/MindPiano-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -592,7 +565,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AustinLubetkin.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -603,15 +576,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = GP8729KYLX;
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MindPiano/MindPiano-Prefix.pch";
 				INFOPLIST_FILE = "MindPiano/MindPiano-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -626,7 +601,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AustinLubetkin.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
