@@ -31,7 +31,7 @@
     
     //See GameCenterAddon.h for the Lua API description.
     
-    //[self.viewController registerAddon:[MindWaveAddon sharedInstance]];
+    [self.viewController registerAddon:[MindWaveAddon sharedInstance]];
     
     
     

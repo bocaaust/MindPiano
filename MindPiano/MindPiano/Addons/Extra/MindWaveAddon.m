@@ -559,13 +559,14 @@ static long long current_timestamp() {
 }
 
 int rawCount = 0;
-
+//int attentionValue;
 #pragma mark
 #pragma COMM SDK Delegate
 -(void)onDataReceived:(NSInteger)datatype data:(int)data obj:(NSObject *)obj deviceType:(DEVICE_TYPE)deviceType {
     if (deviceType != DEVICE_TYPE_MindWaveMobile) {
         return;
     }
+    datatype = MindDataType_CODE_ATTENTION
     switch (datatype) {
             
         case MindDataType_CODE_POOR_SIGNAL:
@@ -594,6 +595,7 @@ int rawCount = 0;
             int16_t eeg_data[1];
             eeg_data[0] = (int16_t)data;
             [[NskAlgoSdk sharedInstance] dataStream:NskAlgoDataTypeEEG data:eeg_data length:1];
+            
         }
             //NSLog(@"%@\n CODE_RAW %d\n",[self NowString],data);
             break;
@@ -1072,7 +1074,12 @@ BOOL bBlink = NO;
 
 static int mindwave_attention(struct lua_State* L)
 {
+    //attAlgoIndex();
     int temp = lAttention;
+   // int16_t attention;
+    //attention[0] = (int16_t)data;
+    //int temp =  [[NskAlgoSdk sharedInstance]]->Nsk;
+    printf("%.6f", lAttention);
     lua_pushinteger(L, temp);
     
     return 1;

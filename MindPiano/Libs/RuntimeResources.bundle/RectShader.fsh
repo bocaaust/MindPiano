@@ -1,5 +1,5 @@
 //
-//  RectShader.fsh
+//  Shader.fsh
 //  Codea
 //
 //  Created by Simeon Saint-Saëns on 17/05/11.

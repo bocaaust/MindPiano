@@ -12,7 +12,6 @@
 		DB0DC0B818C4608A005F4723 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0DC0B718C4608A005F4723 /* CoreLocation.framework */; };
 		DB0DC0BA18C4608E005F4723 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0DC0B918C4608E005F4723 /* Accelerate.framework */; };
 		DB3B3F6317815CFE00A992DB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3B3F6217815CFE00A992DB /* Security.framework */; };
-		DB5578F31BB9185E0024F638 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = DB5578F21BB9185E0024F638 /* Assets */; };
 		DB5E404418CD80570001CC1F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5E404318CD80570001CC1F /* Social.framework */; };
 		DB8A004716F2DBDA005F87A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A004616F2DBDA005F87A6 /* UIKit.framework */; };
 		DB8A004916F2DBDA005F87A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A004816F2DBDA005F87A6 /* Foundation.framework */; };
@@ -50,11 +49,12 @@
 		DBEA4FC91BC243D800000A55 /* LaunchLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC51BC243D800000A55 /* LaunchLogo.png */; };
 		DBEA4FCA1BC243D800000A55 /* LaunchLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC61BC243D800000A55 /* LaunchLogo@2x.png */; };
 		DBEA4FCB1BC243D800000A55 /* LaunchLogo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC71BC243D800000A55 /* LaunchLogo@3x.png */; };
+		FC2F1ED91E14F32300F5F31E /* AssetPacks in Resources */ = {isa = PBXBuildFile; fileRef = FC2F1ED61E14F32300F5F31E /* AssetPacks */; };
 		FC5323CB1E0100EB0066A1B3 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5323CA1E0100EB0066A1B3 /* ExternalAccessory.framework */; };
-		FC690C5C1E0F553B00CE783B /* StreamSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC690C5B1E0F553B00CE783B /* StreamSDK.a */; };
 		FC690C631E0F65ED00CE783B /* libcodea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC690C621E0F65ED00CE783B /* libcodea.a */; };
 		FC690C651E0F65F700CE783B /* libtools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC690C641E0F65F700CE783B /* libtools.a */; };
 		FC73116A1E06481E006E0B7B /* MindWaveAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7311691E06481E006E0B7B /* MindWaveAddon.m */; };
+		FCCDD9631E147D0A0046D459 /* StreamSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCDD9621E147D0A0046D459 /* StreamSDK.a */; };
 		FCF91C651E10B4EE0087F2A5 /* AlgoSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC690C591E0E5E5300CE783B /* AlgoSdk.framework */; };
 		FCF91C671E10B55F0087F2A5 /* AlgoSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF91C661E10B55F0087F2A5 /* AlgoSdk.framework */; };
 		FCF91C681E10B55F0087F2A5 /* AlgoSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FCF91C661E10B55F0087F2A5 /* AlgoSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -80,7 +80,6 @@
 		DB0DC0B718C4608A005F4723 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DB0DC0B918C4608E005F4723 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		DB3B3F6217815CFE00A992DB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		DB5578F21BB9185E0024F638 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = SOURCE_ROOT; };
 		DB5E404318CD80570001CC1F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		DB8A004316F2DBDA005F87A6 /* MindPiano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindPiano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8A004616F2DBDA005F87A6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -130,9 +129,11 @@
 		DBF4436A170F02580026A109 /* lobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lobject.h; sourceTree = "<group>"; };
 		DBF4436B170F02580026A109 /* lua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua.h; sourceTree = "<group>"; };
 		DBF4436C170F02580026A109 /* luaconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = luaconf.h; sourceTree = "<group>"; };
+		FC2F1ECD1E14F18C00F5F31E /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
+		FC2F1ED41E14F23D00F5F31E /* SingleKey.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = SingleKey.m4a; path = MindPiano/Assets/SingleKey.m4a; sourceTree = "<group>"; };
+		FC2F1ED61E14F32300F5F31E /* AssetPacks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AssetPacks; sourceTree = "<group>"; };
 		FC5323CA1E0100EB0066A1B3 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		FC690C591E0E5E5300CE783B /* AlgoSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlgoSdk.framework; sourceTree = "<group>"; };
-		FC690C5B1E0F553B00CE783B /* StreamSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = StreamSDK.a; sourceTree = "<group>"; };
 		FC690C5E1E0F573C00CE783B /* TGSEEGPower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGSEEGPower.h; sourceTree = "<group>"; };
 		FC690C5F1E0F573C00CE783B /* TGStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGStream.h; sourceTree = "<group>"; };
 		FC690C601E0F573C00CE783B /* TGStreamDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGStreamDelegate.h; sourceTree = "<group>"; };
@@ -141,6 +142,7 @@
 		FC690C641E0F65F700CE783B /* libtools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtools.a; path = Libs/libtools.a; sourceTree = "<group>"; };
 		FC7311691E06481E006E0B7B /* MindWaveAddon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MindWaveAddon.m; sourceTree = "<group>"; };
 		FC73116B1E064831006E0B7B /* MindWaveAddon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MindWaveAddon.h; sourceTree = "<group>"; };
+		FCCDD9621E147D0A0046D459 /* StreamSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = StreamSDK.a; sourceTree = "<group>"; };
 		FCF91C661E10B55F0087F2A5 /* AlgoSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlgoSdk.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,6 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCCDD9631E147D0A0046D459 /* StreamSDK.a in Frameworks */,
 				FCF91C651E10B4EE0087F2A5 /* AlgoSdk.framework in Frameworks */,
 				FC690C651E0F65F700CE783B /* libtools.a in Frameworks */,
 				FC690C631E0F65ED00CE783B /* libcodea.a in Frameworks */,
@@ -176,7 +179,6 @@
 				DB8A007716F2E084005F87A6 /* OpenAL.framework in Frameworks */,
 				DB8A007516F2E073005F87A6 /* libicucore.dylib in Frameworks */,
 				DB8A007116F2E069005F87A6 /* CoreMotion.framework in Frameworks */,
-				FC690C5C1E0F553B00CE783B /* StreamSDK.a in Frameworks */,
 				DB8A006F16F2E039005F87A6 /* QuartzCore.framework in Frameworks */,
 				DB8A004716F2DBDA005F87A6 /* UIKit.framework in Frameworks */,
 				DB8A004916F2DBDA005F87A6 /* Foundation.framework in Frameworks */,
@@ -189,6 +191,7 @@
 		DB8A003A16F2DBDA005F87A6 = {
 			isa = PBXGroup;
 			children = (
+				FC2F1ED41E14F23D00F5F31E /* SingleKey.m4a */,
 				FCF91C661E10B55F0087F2A5 /* AlgoSdk.framework */,
 				DB8A015B16F73DFF005F87A6 /* MindPiano.codea */,
 				DB8A004C16F2DBDA005F87A6 /* MindPiano */,
@@ -209,9 +212,9 @@
 		DB8A004516F2DBDA005F87A6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FCCDD9621E147D0A0046D459 /* StreamSDK.a */,
 				FC690C641E0F65F700CE783B /* libtools.a */,
 				FC690C621E0F65ED00CE783B /* libcodea.a */,
-				FC690C5B1E0F553B00CE783B /* StreamSDK.a */,
 				FC690C591E0E5E5300CE783B /* AlgoSdk.framework */,
 				FC5323CA1E0100EB0066A1B3 /* ExternalAccessory.framework */,
 				DBE0BEA21A8B693D0010DC06 /* iAd.framework */,
@@ -248,6 +251,7 @@
 		DB8A004C16F2DBDA005F87A6 /* MindPiano */ = {
 			isa = PBXGroup;
 			children = (
+				FC2F1ECD1E14F18C00F5F31E /* Assets */,
 				DBF44366170F02580026A109 /* Lua */,
 				DBF44364170F00F20026A109 /* Addons */,
 				DB8A008E16F2E166005F87A6 /* StandaloneCodeaViewController.h */,
@@ -276,7 +280,7 @@
 		DB8A009F16F2E859005F87A6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DB5578F21BB9185E0024F638 /* Assets */,
+				FC2F1ED61E14F32300F5F31E /* AssetPacks */,
 				DB8A00A016F2E859005F87A6 /* Inconsolata.otf */,
 				DB8A00A116F2E859005F87A6 /* SourceSansPro-Bold.otf */,
 				DB8A00A216F2E859005F87A6 /* SourceSansPro-Regular.otf */,
@@ -403,8 +407,8 @@
 				DB8A00A416F2E859005F87A6 /* Inconsolata.otf in Resources */,
 				DB8A00A516F2E859005F87A6 /* SourceSansPro-Bold.otf in Resources */,
 				DBEA4FCA1BC243D800000A55 /* LaunchLogo@2x.png in Resources */,
-				DB5578F31BB9185E0024F638 /* Assets in Resources */,
 				DBEA4FC31BC23A0200000A55 /* Launch Screen.storyboard in Resources */,
+				FC2F1ED91E14F32300F5F31E /* AssetPacks in Resources */,
 				DBEA4FC91BC243D800000A55 /* LaunchLogo.png in Resources */,
 				DB8A00A616F2E859005F87A6 /* SourceSansPro-Regular.otf in Resources */,
 				DB8A00A716F2E859005F87A6 /* SourceSansPro-Semibold.otf in Resources */,
@@ -559,6 +563,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Libs",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -566,6 +571,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AustinLubetkin.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;
+				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -602,6 +608,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AustinLubetkin.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;
+				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

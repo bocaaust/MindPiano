@@ -1,6 +1,6 @@
 -- MindPiano
 supportedOrientations(LANDSCAPE_ANY)
-displayMode(FULLSCREEN_NO_BUTTONS)
+--displayMode(FULLSCREEN_NO_BUTTONS)
 -- Use this function to perform your initial setup
 function setup()
     touches = {}
@@ -65,7 +65,8 @@ end
 
 -- This function gets called once every frame
 function draw()
-    current = math.floor(mindwave.attention()/88)
+    print(mindwave.isBlink())
+    --current = math.floor(mindwave.getAttention()/88)
     isBlink = mindwave.isBlink()
     -- This sets a dark background color
     background(199, 212, 203, 255)
@@ -418,7 +419,7 @@ function drawKey4(touch)
             if i == 45 then
                 yPush = yPush + HEIGHT/3
                 xPush = xPush - 26
-                print(counter)
+                --print(counter)
             end
             rect((counter+xPush)*WIDTH/52*2,HEIGHT/6+yPush,WIDTH/52*2,HEIGHT/3)
             
