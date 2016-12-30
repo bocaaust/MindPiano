@@ -130,7 +130,6 @@
 		DBF4436B170F02580026A109 /* lua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua.h; sourceTree = "<group>"; };
 		DBF4436C170F02580026A109 /* luaconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = luaconf.h; sourceTree = "<group>"; };
 		FC2F1ECD1E14F18C00F5F31E /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
-		FC2F1ED41E14F23D00F5F31E /* SingleKey.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = SingleKey.m4a; path = MindPiano/Assets/SingleKey.m4a; sourceTree = "<group>"; };
 		FC2F1ED61E14F32300F5F31E /* AssetPacks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AssetPacks; sourceTree = "<group>"; };
 		FC5323CA1E0100EB0066A1B3 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		FC690C591E0E5E5300CE783B /* AlgoSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlgoSdk.framework; sourceTree = "<group>"; };
@@ -191,7 +190,6 @@
 		DB8A003A16F2DBDA005F87A6 = {
 			isa = PBXGroup;
 			children = (
-				FC2F1ED41E14F23D00F5F31E /* SingleKey.m4a */,
 				FCF91C661E10B55F0087F2A5 /* AlgoSdk.framework */,
 				DB8A015B16F73DFF005F87A6 /* MindPiano.codea */,
 				DB8A004C16F2DBDA005F87A6 /* MindPiano */,
