@@ -67,7 +67,7 @@ end
 -- This function gets called once every frame
 function draw()
     --print(mindwave.isBlink())
-    --current = math.floor(mindwave.getAttention()/88)
+    current = math.floor(mindwave.getAttention()/88)
     isBlink = mindwave.isBlink()
     -- This sets a dark background color
     background(199, 212, 203, 255)
@@ -531,39 +531,38 @@ function drawKey5(touch)
             end
         rect(counter,HEIGHT/6+yPush,WIDTH/26,HEIGHT/3)
         counter = counter + WIDTH/26
+        end
     end
-end
-xPush=0
-yPush=0
+    xPush=0
+    yPush=0
 
-counter = 0
-for i=1,88 do
-fill(0)
-if i == current then
-fill(0, 202, 255, 255)
-end
-if i == 45 then
-counter = 0
-yPush = yPush + HEIGHT/3
-end
-if keyType[i] == false then
-counter = counter + WIDTH/52*2
-end
-if keyType[i] then
-counter = counter - WIDTH/52/4*2
-if touchEnabled and touch.state == BEGAN then
-if touch.y > HEIGHT/6+HEIGHT/12+yPush and touch.y <HEIGHT/2+yPush then
-if touch.x > counter and touch.x < counter+WIDTH/52/2*2 then
-playKey(i)
-fill(186, 186, 186, 255)
-end
-end
-end
-rect(counter,HEIGHT/6+HEIGHT/12+yPush,WIDTH/52,HEIGHT/12*3)
-counter = counter +WIDTH/52/4*2
+    counter = 0
+    for i=1,88 do
+        fill(0)
+        if i == current then
+            fill(0, 202, 255, 255)
+        end
+        if i == 45 then
+            counter = 0
+            yPush = yPush + HEIGHT/3
+        end
+        if keyType[i] == false then
+            counter = counter + WIDTH/52*2
+        end
+        if keyType[i] then
+            counter = counter - WIDTH/52/4*2
+            if touchEnabled and touch.state == BEGAN then
+                if touch.y > HEIGHT/6+HEIGHT/12+yPush and touch.y <HEIGHT/2+yPush then
+                    if touch.x > counter and touch.x < counter+WIDTH/52/2*2 then
+                        playKey(i)
+                        fill(186, 186, 186, 255)
+                    end
+                end
+            end
+        rect(counter,HEIGHT/6+HEIGHT/12+yPush,WIDTH/52,HEIGHT/12*3)
+        counter = counter +WIDTH/52/4*2
 
-end
-
-end
+        end
+    end
 end
 
