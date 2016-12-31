@@ -80,7 +80,13 @@ function draw()
     current = math.floor(mindwave.getAttention()/88)
     isBlink = mindwave.isBlink()
     -- This sets a dark background color
-    background(199, 212, 203, 255)
+    --background(199, 212, 203, 255)
+    background(0)
+    tint(255,255,255,225)
+    sprite("Dropbox:wood",0,0,WIDTH,HEIGHT)
+    fill(0)
+    rect(0,HEIGHT/6,WIDTH,HEIGHT/6+HEIGHT/2)
+    tint(255)
     for k,touch in pairs(touches) do
         drawKey5(touch)
     end
@@ -91,18 +97,18 @@ function draw()
     if isBlink then
         playKey(current)
     end
-    fill(0)
+    fill(0,0,0,125)
     rect(0,HEIGHT*5/6,WIDTH,HEIGHT/6)
     fill(255)
     fontSize(WIDTH/15)
     text("Mind Piano",WIDTH/2,HEIGHT*5.35/6)
-    fill(255,0,0,255)
+    --fill(255,0,0,255)
     fontSize(WIDTH/40)
     text("Focus On the Target To Raise Selected Note", WIDTH/2, HEIGHT/8)
     --  if CurrentTouch.state == BEGAN and touchEnabled then
     --     playKey(readKey())
     -- end
-    sprite("Dropbox:target",WIDTH/2,HEIGHT/16,HEIGHT/16)
+    sprite("Dropbox:target",WIDTH/2,HEIGHT/32,HEIGHT/16)
     status()
     text("Created by Austin Lubetkin", WIDTH*3/4,HEIGHT/16)
     if CurrentTouch.state==BEGAN and CurrentTouch.x > WIDTH*5/8 and CurrentTouch.y < HEIGHT/6 then
@@ -511,9 +517,9 @@ function drawKey5(touch)
     xPush=0
     iCheck = 0
     for i=1,88 do
-        fill(255)
+        tint(255)
         if i == current then
-            fill(0, 202, 255, 255)
+            tint(0, 202, 255, 255)
         end
         if keyType[i] == false then
             if i == 45 then
@@ -530,11 +536,11 @@ function drawKey5(touch)
                     if i == 1 and touch.x < WIDTH/52*2 and touch.y < HEIGHT/2 then
                         if touch.x< WIDTH/52*1.5 or touch.y < HEIGHT/6+HEIGHT/12 then
                             playKey(1)
-                            fill(186, 186, 186, 255)
+                            tint(186, 186, 186, 255)
                         end
                     elseif i == 88 and touch.x > WIDTH-WIDTH/52*2 and touch.y > HEIGHT/2  then
                         playKey(88)
-                        fill(186, 186, 186, 255)
+                        tint(186, 186, 186, 255)
                     end
                 else
                     if keyType[i+1] then
@@ -553,12 +559,13 @@ function drawKey5(touch)
                     if touch.x > counter and touch.x < counter+WIDTH/26 and touch.y > HEIGHT/6+yPush and touch.y < HEIGHT/6+HEIGHT/3+yPush then
                         if (touch.x > leftLimit and touch.x < rightLimit) or touch.y < yPush+HEIGHT/6+HEIGHT/12 then
                             playKey(i)
-                            fill(186, 186, 186, 255)
+                            tint(186, 186, 186, 255)
                         end
                     end
                 end
             end
-        rect(counter,HEIGHT/6+yPush,WIDTH/26,HEIGHT/3)
+        --rect(counter,HEIGHT/6+yPush,WIDTH/26,HEIGHT/3)
+            sprite("Dropbox:ivory",counter,HEIGHT/6+yPush,WIDTH/26-2.5,HEIGHT/3)
         counter = counter + WIDTH/26
         end
     end
@@ -566,10 +573,13 @@ function drawKey5(touch)
     yPush=0
 
     counter = 0
+    spriteMode(CORNER)
+     math.randomseed(15)
     for i=1,88 do
-        fill(0)
+        --fill(0)
+        tint(255)
         if i == current then
-            fill(0, 202, 255, 255)
+            tint(0, 202, 255, 255)
         end
         if i == 45 then
             counter = 0
@@ -584,14 +594,17 @@ function drawKey5(touch)
                 if touch.y > HEIGHT/6+HEIGHT/12+yPush and touch.y <HEIGHT/2+yPush then
                     if touch.x > counter and touch.x < counter+WIDTH/52/2*2 then
                         playKey(i)
-                        fill(186, 186, 186, 255)
+                        tint(186, 186, 186, 255)
                     end
                 end
             end
-        rect(counter,HEIGHT/6+HEIGHT/12+yPush,WIDTH/52,HEIGHT/12*3)
+       -- rect(counter,HEIGHT/6+HEIGHT/12+yPush,WIDTH/52,HEIGHT/12*3)
+        sprite("Dropbox:bKey"..i%3,counter,HEIGHT/6+HEIGHT/12+yPush,WIDTH/52,HEIGHT/12*3)
+            tint(255)
         counter = counter +WIDTH/52/4*2
 
         end
     end
+    tint(255)
 end
 

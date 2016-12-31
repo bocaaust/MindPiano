@@ -126,8 +126,8 @@ static int luaopen_mindwave(lua_State *L)
         
         // Initialize Device
         
-       // mwDevice = [MWMDevice sharedInstance];
-       // [mwDevice setDelegate:self];
+        mwDevice = [MWMDevice sharedInstance];
+        [mwDevice setDelegate:self];
         
         
         
@@ -323,7 +323,7 @@ PLOT_PARAM defaultPlotParam[SegmentMax] = {
 */
 
 - (IBAction)startPausePress:(id)sender {
-    bPaused = YES;
+   // bPaused = YES;
     if (bPaused) {
         [[NskAlgoSdk sharedInstance] startProcess];
     } else {
@@ -1031,16 +1031,16 @@ BOOL bBlink = NO;
     });
 }
 
--(void)didConnect
-{
-    NSLog(@"%s", __func__);
-    [[MWMDevice sharedInstance] enableLoggingWithOptions:LoggingOptions_Processed | LoggingOptions_Raw];
-}
-
--(void)didDisconnect
-{
-    NSLog(@"%s", __func__);
-}
+ -(void)didConnect
+ {
+ NSLog(@"%s", __func__);
+ [[MWMDevice sharedInstance] enableLoggingWithOptions:LoggingOptions_Processed | LoggingOptions_Raw];
+ }
+ 
+ -(void)didDisconnect
+ {
+ NSLog(@"%s", __func__);
+ }
 
 
 
@@ -1074,20 +1074,25 @@ BOOL bBlink = NO;
 
 - (void) codea:(StandaloneCodeaViewController*)codeaController didCreateLuaState:(struct lua_State*)L
 {
-    
-    
+    #ifdef IOS_DEVICE
+    // we use real mindwave headset on iOS device
+    [[TGStream sharedInstance] setDelegate:self];
+    [[TGStream sharedInstance] initConnectWithAccessorySession];
+    #endif
     
     CODEA_ADDON_REGISTER(MINDWAVE_LIB_NAME, luaopen_mindwave);
 }
 
 static int mindwave_attention(struct lua_State* L)
 {
+ //     [[NskAlgoSdk sharedInstance] startProcess];
     //attAlgoIndex();
+   // lAttention = [att_index floatValue];
     int temp = lAttention;
    // int16_t attention;
     //attention[0] = (int16_t)data;
     //int temp =  [[NskAlgoSdk sharedInstance]]->Nsk;
-    printf("%.6f", lAttention);
+    //printf("%.6f", lAttention);
     lua_pushinteger(L, temp);
     
     return 1;
@@ -1098,6 +1103,7 @@ static int mindwave_status(struct lua_State* L) {
 }
 static int mindwave_isBlink(struct lua_State* L)
 {
+    printf("%d\n", bBlink);
     lua_pushboolean(L, bBlink);
     if (bBlink) {
         bBlink = NO;
