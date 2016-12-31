@@ -3,6 +3,7 @@ supportedOrientations(LANDSCAPE_ANY)
 displayMode(FULLSCREEN_NO_BUTTONS)
 -- Use this function to perform your initial setup
 function setup()
+    selected = {}
     samples = {}
     samples[1] = {}
     samples[2] = {32.7032,65.4064,130.813,261.626,523.251,1046.50,2093.00,4186.01}
@@ -44,6 +45,10 @@ function setup()
             two = true
         end
     end
+    for i=1,88 do
+    selected[i] = false
+    end
+    backup = selected
     table.insert(keyType,false)
     parameter.integer("current",1,#frequency)
     parameter.boolean("touchEnabled",true)
@@ -56,6 +61,7 @@ function touched(touch)
     if touch.state == ENDED then
         -- When any touch ends, remove it from
         --  our table
+        drawKey5(touch)
         touches[touch.id] = nil
     else
         -- If the touch is in any other state
@@ -91,6 +97,7 @@ function draw()
         drawKey5(touch)
     end
     if #touches ==0 then
+        selected = backup
         drawKey5(CurrentTouch)
     end
     --sprite("Project:piano",WIDTH/2,HEIGHT/2,WIDTH)
@@ -531,16 +538,26 @@ function drawKey5(touch)
                 counter=0
                 iCheck=0
             end
-            if touchEnabled and touch.state == BEGAN then
+            if touchEnabled then
                 if i == 1 or i ==88 then
                     if i == 1 and touch.x < WIDTH/52*2 and touch.y < HEIGHT/2 then
                         if touch.x< WIDTH/52*1.5 or touch.y < HEIGHT/6+HEIGHT/12 then
-                            playKey(1)
-                            tint(186, 186, 186, 255)
+                            if touch.state == BEGAN then
+                                playKey(1)
+                                selected[i] = true
+                                --tint(186, 186, 186, 255)
+                            else
+                                selected[i] = false
+                            end
                         end
                     elseif i == 88 and touch.x > WIDTH-WIDTH/52*2 and touch.y > HEIGHT/2  then
-                        playKey(88)
-                        tint(186, 186, 186, 255)
+                        if touch.state == BEGAN then
+                            playKey(88)
+                            selected[i] = true
+                        --tint(186, 186, 186, 255)
+                        else
+                            selected[i] = false
+                        end
                     end
                 else
                     if keyType[i+1] then
@@ -558,13 +575,20 @@ function drawKey5(touch)
                     end
                     if touch.x > counter and touch.x < counter+WIDTH/26 and touch.y > HEIGHT/6+yPush and touch.y < HEIGHT/6+HEIGHT/3+yPush then
                         if (touch.x > leftLimit and touch.x < rightLimit) or touch.y < yPush+HEIGHT/6+HEIGHT/12 then
-                            playKey(i)
-                            tint(186, 186, 186, 255)
+                            if touch.state == BEGAN then
+                                playKey(i)
+                                selected[i] = true
+                            else
+                                selected[i] = false
+                            end
                         end
                     end
                 end
             end
         --rect(counter,HEIGHT/6+yPush,WIDTH/26,HEIGHT/3)
+            if selected[i] then
+                tint(186, 186, 186, 255)
+            end
             sprite("Dropbox:ivory",counter,HEIGHT/6+yPush,WIDTH/26-2.5,HEIGHT/3)
         counter = counter + WIDTH/26
         end
@@ -590,15 +614,24 @@ function drawKey5(touch)
         end
         if keyType[i] then
             counter = counter - WIDTH/52/4*2
-            if touchEnabled and touch.state == BEGAN then
+            if touchEnabled then
                 if touch.y > HEIGHT/6+HEIGHT/12+yPush and touch.y <HEIGHT/2+yPush then
                     if touch.x > counter and touch.x < counter+WIDTH/52/2*2 then
-                        playKey(i)
-                        tint(186, 186, 186, 255)
+                        if touch.state == BEGAN then
+                            playKey(i)
+                            selected[i] = true
+                           --tint(186, 186, 186, 255)
+                        else
+                           selected[i] = false
+                        end
+                        --tint(186, 186, 186, 255)
                     end
                 end
             end
        -- rect(counter,HEIGHT/6+HEIGHT/12+yPush,WIDTH/52,HEIGHT/12*3)
+        if selected[i] then
+            tint(186, 186, 186, 255)
+        end
         sprite("Dropbox:bKey"..i%3,counter,HEIGHT/6+HEIGHT/12+yPush,WIDTH/52,HEIGHT/12*3)
             tint(255)
         counter = counter +WIDTH/52/4*2
