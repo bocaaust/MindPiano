@@ -43,6 +43,8 @@ static int mindwave_attention(struct lua_State* L);
 
 static int mindwave_isBlink(struct lua_State* L);
 
+static int mindwave_status(struct lua_State* L);
+
 #pragma mark - Lua Function Mappings
 
 static const luaL_Reg mindwaveLibs[] =
@@ -50,6 +52,7 @@ static const luaL_Reg mindwaveLibs[] =
    // {"enabled", mindwave_enabled},
     {"getAttention", mindwave_attention},
     {"isBlink", mindwave_isBlink},
+    {"status",mindwave_status},
     {NULL, NULL}
 };
 
@@ -860,6 +863,7 @@ static ConnectionStates lastConnectionState = -1;
     }
 }
 */
+int status = 0;
 - (void)signalQuality:(NskAlgoSignalQuality)signalQuality {
     if (signalStr == nil) {
         signalStr = [[NSMutableString alloc] init];
@@ -868,15 +872,19 @@ static ConnectionStates lastConnectionState = -1;
     [signalStr appendString:@"Signal quailty: "];
     switch (signalQuality) {
         case NskAlgoSignalQualityGood:
+            status = 3;
             [signalStr appendString:@"Good"];
             break;
         case NskAlgoSignalQualityMedium:
+            status = 2;
             [signalStr appendString:@"Medium"];
             break;
         case NskAlgoSignalQualityNotDetected:
+            status = 0;
             [signalStr appendString:@"Not detected"];
             break;
         case NskAlgoSignalQualityPoor:
+            status = 1;
             [signalStr appendString:@"Poor"];
             break;
     }
@@ -925,7 +933,7 @@ BOOL bBlink = NO;
     dispatch_sync(dispatch_get_main_queue(), ^{
        // [_blinkImage setImage:[UIImage imageNamed:@"led-on"]];
         bBlink = YES;
-        [NSTimer scheduledTimerWithTimeInterval:0.25f target:self selector:@selector(eyeBlinkAnimate) userInfo:nil repeats:NO];
+        //[NSTimer scheduledTimerWithTimeInterval:0.25f target:self selector:@selector(eyeBlinkAnimate) userInfo:nil repeats:NO];
     });
 }
 
@@ -1084,7 +1092,10 @@ static int mindwave_attention(struct lua_State* L)
     
     return 1;
 }
-
+static int mindwave_status(struct lua_State* L) {
+    lua_pushinteger(L, status);
+    return 1;
+}
 static int mindwave_isBlink(struct lua_State* L)
 {
     lua_pushboolean(L, bBlink);

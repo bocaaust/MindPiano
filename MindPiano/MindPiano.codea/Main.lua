@@ -100,10 +100,20 @@ function draw()
     --  if CurrentTouch.state == BEGAN and touchEnabled then
     --     playKey(readKey())
     -- end
-    -- This sets the line thickness
-    strokeWidth(5)
-    -- Do your drawing here
+    status()
+
     
+end
+
+function status()
+    if mindwave.status() == 0 then
+        sprite("Dropbox:disconected",WIDTH/15,WIDTH/15,WIDTH/12)
+    else
+        sprite("Dropbox:connected",WIDTH/15,WIDTH/15,WIDTH/12)
+        fontSize(35)
+        fill(0)
+        text(mindwave.status(),WIDTH/10,WIDTH/12)
+    end
 end
 
 function playKey(key)
