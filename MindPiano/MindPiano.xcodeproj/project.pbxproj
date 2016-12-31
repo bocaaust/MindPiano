@@ -49,7 +49,7 @@
 		DBEA4FC91BC243D800000A55 /* LaunchLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC51BC243D800000A55 /* LaunchLogo.png */; };
 		DBEA4FCA1BC243D800000A55 /* LaunchLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC61BC243D800000A55 /* LaunchLogo@2x.png */; };
 		DBEA4FCB1BC243D800000A55 /* LaunchLogo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC71BC243D800000A55 /* LaunchLogo@3x.png */; };
-		FC2F1ED91E14F32300F5F31E /* AssetPacks in Resources */ = {isa = PBXBuildFile; fileRef = FC2F1ED61E14F32300F5F31E /* AssetPacks */; };
+		FC2F1EDD1E17463900F5F31E /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = FC2F1EDC1E17463900F5F31E /* Assets */; };
 		FC5323CB1E0100EB0066A1B3 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5323CA1E0100EB0066A1B3 /* ExternalAccessory.framework */; };
 		FC690C631E0F65ED00CE783B /* libcodea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC690C621E0F65ED00CE783B /* libcodea.a */; };
 		FC690C651E0F65F700CE783B /* libtools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC690C641E0F65F700CE783B /* libtools.a */; };
@@ -129,8 +129,7 @@
 		DBF4436A170F02580026A109 /* lobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lobject.h; sourceTree = "<group>"; };
 		DBF4436B170F02580026A109 /* lua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua.h; sourceTree = "<group>"; };
 		DBF4436C170F02580026A109 /* luaconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = luaconf.h; sourceTree = "<group>"; };
-		FC2F1ECD1E14F18C00F5F31E /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
-		FC2F1ED61E14F32300F5F31E /* AssetPacks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AssetPacks; sourceTree = "<group>"; };
+		FC2F1EDC1E17463900F5F31E /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 		FC5323CA1E0100EB0066A1B3 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		FC690C591E0E5E5300CE783B /* AlgoSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlgoSdk.framework; sourceTree = "<group>"; };
 		FC690C5E1E0F573C00CE783B /* TGSEEGPower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGSEEGPower.h; sourceTree = "<group>"; };
@@ -190,6 +189,7 @@
 		DB8A003A16F2DBDA005F87A6 = {
 			isa = PBXGroup;
 			children = (
+				FC2F1EDC1E17463900F5F31E /* Assets */,
 				FCF91C661E10B55F0087F2A5 /* AlgoSdk.framework */,
 				DB8A015B16F73DFF005F87A6 /* MindPiano.codea */,
 				DB8A004C16F2DBDA005F87A6 /* MindPiano */,
@@ -249,7 +249,6 @@
 		DB8A004C16F2DBDA005F87A6 /* MindPiano */ = {
 			isa = PBXGroup;
 			children = (
-				FC2F1ECD1E14F18C00F5F31E /* Assets */,
 				DBF44366170F02580026A109 /* Lua */,
 				DBF44364170F00F20026A109 /* Addons */,
 				DB8A008E16F2E166005F87A6 /* StandaloneCodeaViewController.h */,
@@ -278,7 +277,6 @@
 		DB8A009F16F2E859005F87A6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FC2F1ED61E14F32300F5F31E /* AssetPacks */,
 				DB8A00A016F2E859005F87A6 /* Inconsolata.otf */,
 				DB8A00A116F2E859005F87A6 /* SourceSansPro-Bold.otf */,
 				DB8A00A216F2E859005F87A6 /* SourceSansPro-Regular.otf */,
@@ -406,7 +404,7 @@
 				DB8A00A516F2E859005F87A6 /* SourceSansPro-Bold.otf in Resources */,
 				DBEA4FCA1BC243D800000A55 /* LaunchLogo@2x.png in Resources */,
 				DBEA4FC31BC23A0200000A55 /* Launch Screen.storyboard in Resources */,
-				FC2F1ED91E14F32300F5F31E /* AssetPacks in Resources */,
+				FC2F1EDD1E17463900F5F31E /* Assets in Resources */,
 				DBEA4FC91BC243D800000A55 /* LaunchLogo.png in Resources */,
 				DB8A00A616F2E859005F87A6 /* SourceSansPro-Regular.otf in Resources */,
 				DB8A00A716F2E859005F87A6 /* SourceSansPro-Semibold.otf in Resources */,
