@@ -81,7 +81,6 @@ function draw()
     isBlink = mindwave.isBlink()
     -- This sets a dark background color
     background(199, 212, 203, 255)
-    
     for k,touch in pairs(touches) do
         drawKey5(touch)
     end
@@ -97,22 +96,29 @@ function draw()
     fill(255)
     fontSize(WIDTH/15)
     text("Mind Piano",WIDTH/2,HEIGHT*5.35/6)
+    fill(255,0,0,255)
+    fontSize(WIDTH/40)
+    text("Focus On the Target To Raise Selected Note", WIDTH/2, HEIGHT/8)
     --  if CurrentTouch.state == BEGAN and touchEnabled then
     --     playKey(readKey())
     -- end
+    sprite("Dropbox:target",WIDTH/2,HEIGHT/16,HEIGHT/16)
     status()
-
-    
+    text("Created by Austin Lubetkin", WIDTH*3/4,HEIGHT/16)
+    if CurrentTouch.state==BEGAN and CurrentTouch.x > WIDTH*5/8 and CurrentTouch.y < HEIGHT/6 then
+        openURL("http://www.bocaaust.com/techresume.html",true)
+    end
 end
 
 function status()
+  --  print(mindwave.status() == 0)
     if mindwave.status() == 0 then
         sprite("Dropbox:disconected",WIDTH/15,WIDTH/15,WIDTH/12)
     else
         sprite("Dropbox:connected",WIDTH/15,WIDTH/15,WIDTH/12)
-        fontSize(35)
+        fontSize(WIDTH/60)
         fill(0)
-        text(mindwave.status(),WIDTH/10,WIDTH/12)
+        text("Connection Strength (1-3)"..mindwave.status(),WIDTH/4,WIDTH/12)
     end
 end
 
