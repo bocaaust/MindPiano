@@ -54,8 +54,8 @@
 		FC690C631E0F65ED00CE783B /* libcodea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC690C621E0F65ED00CE783B /* libcodea.a */; };
 		FC690C651E0F65F700CE783B /* libtools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC690C641E0F65F700CE783B /* libtools.a */; };
 		FC73116A1E06481E006E0B7B /* MindWaveAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7311691E06481E006E0B7B /* MindWaveAddon.m */; };
-		FC911F671E17A30B008CC488 /* AlgoSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC911F661E17A30B008CC488 /* AlgoSdk.framework */; };
-		FC911F681E17A30B008CC488 /* AlgoSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC911F661E17A30B008CC488 /* AlgoSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FC8277471E189455000250A9 /* AlgoSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC8277451E189455000250A9 /* AlgoSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FC82774A1E189492000250A9 /* AlgoSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8277451E189455000250A9 /* AlgoSdk.framework */; };
 		FCCDD9631E147D0A0046D459 /* StreamSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCDD9621E147D0A0046D459 /* StreamSDK.a */; };
 /* End PBXBuildFile section */
 
@@ -66,7 +66,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FC911F681E17A30B008CC488 /* AlgoSdk.framework in Embed Frameworks */,
+				FC8277471E189455000250A9 /* AlgoSdk.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,9 +139,9 @@
 		FC690C641E0F65F700CE783B /* libtools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtools.a; path = Libs/libtools.a; sourceTree = "<group>"; };
 		FC7311691E06481E006E0B7B /* MindWaveAddon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MindWaveAddon.m; sourceTree = "<group>"; };
 		FC73116B1E064831006E0B7B /* MindWaveAddon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MindWaveAddon.h; sourceTree = "<group>"; };
-		FC911F661E17A30B008CC488 /* AlgoSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlgoSdk.framework; sourceTree = "<group>"; };
+		FC8277451E189455000250A9 /* AlgoSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlgoSdk.framework; sourceTree = "<group>"; };
+		FC8277481E189474000250A9 /* AlgoSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlgoSdk.framework; path = "../../MindWave/iOS Developer Tools 4.4/EEG_Algo_SDK_iOS/AlgoSdk.framework"; sourceTree = "<group>"; };
 		FCCDD9621E147D0A0046D459 /* StreamSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = StreamSDK.a; sourceTree = "<group>"; };
-		FCF91C661E10B55F0087F2A5 /* AlgoSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlgoSdk.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC911F671E17A30B008CC488 /* AlgoSdk.framework in Frameworks */,
+				FC82774A1E189492000250A9 /* AlgoSdk.framework in Frameworks */,
 				FCCDD9631E147D0A0046D459 /* StreamSDK.a in Frameworks */,
 				FC690C651E0F65F700CE783B /* libtools.a in Frameworks */,
 				FC690C631E0F65ED00CE783B /* libcodea.a in Frameworks */,
@@ -188,9 +188,8 @@
 		DB8A003A16F2DBDA005F87A6 = {
 			isa = PBXGroup;
 			children = (
-				FC911F661E17A30B008CC488 /* AlgoSdk.framework */,
+				FC8277451E189455000250A9 /* AlgoSdk.framework */,
 				FC2F1EDC1E17463900F5F31E /* Assets */,
-				FCF91C661E10B55F0087F2A5 /* AlgoSdk.framework */,
 				DB8A015B16F73DFF005F87A6 /* MindPiano.codea */,
 				DB8A004C16F2DBDA005F87A6 /* MindPiano */,
 				DB8A004516F2DBDA005F87A6 /* Frameworks */,
@@ -210,6 +209,7 @@
 		DB8A004516F2DBDA005F87A6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FC8277481E189474000250A9 /* AlgoSdk.framework */,
 				FCCDD9621E147D0A0046D459 /* StreamSDK.a */,
 				FC690C641E0F65F700CE783B /* libtools.a */,
 				FC690C621E0F65ED00CE783B /* libcodea.a */,
@@ -427,7 +427,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "MVERS=`cat libversion`\n\necho \"note: building against lib version $MVERS.\"\n\nif [ ! -f \"$PROJECT_DIR/Libs/libcodea.a\" ]\nthen\n    echo \"note: Downloading Codea Library...\"\n    curl -o \"$PROJECT_DIR/Libs/libcodea.a.gz\" \"http://codea.io/lib/libcodea-$MVERS.a.gz\"\n\n    if [[ $? == 0 ]]\n    then\n        gunzip \"$PROJECT_DIR/Libs/libcodea.a.gz\"\n    else\n        echo \"error: Failed to Download Codea Library. Please ensure you have an active Internet connection.\"\n        return 1\n    fi\nfi\n\nif [ ! -f \"$PROJECT_DIR/Libs/libtools.a\" ]\nthen\n    echo \"note: Downloading Tools Library...\"\n    curl -o \"$PROJECT_DIR/Libs/libtools.a.gz\" \"http://codea.io/lib/libtools-$MVERS.a.gz\"\n\n    if [[ $? == 0 ]]\n    then\n        gunzip \"$PROJECT_DIR/Libs/libtools.a.gz\"\n    else\n        echo \"error: Failed to Download Tools Library. Please ensure you have an active Internet connection.\"\n        return 1\n    fi\nfi\n\n\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
+			shellScript = "MVERS=`cat libversion`\n\necho \"note: building against lib version $MVERS.\"\n\nif [ ! -f \"$PROJECT_DIR/Libs/libcodea.a\" ]\nthen\n    echo \"note: Downloading Codea Library...\"\n    curl -o \"$PROJECT_DIR/Libs/libcodea.a.gz\" \"http://codea.io/lib/libcodea-$MVERS.a.gz\"\n\n    if [[ $? == 0 ]]\n    then\n        gunzip \"$PROJECT_DIR/Libs/libcodea.a.gz\"\n    else\n        echo \"error: Failed to Download Codea Library. Please ensure you have an active Internet connection.\"\n        return 1\n    fi\nfi\n\nif [ ! -f \"$PROJECT_DIR/Libs/libtools.a\" ]\nthen\n    echo \"note: Downloading Tools Library...\"\n    curl -o \"$PROJECT_DIR/Libs/libtools.a.gz\" \"http://codea.io/lib/libtools-$MVERS.a.gz\"\n\n    if [[ $? == 0 ]]\n    then\n        gunzip \"$PROJECT_DIR/Libs/libtools.a.gz\"\n    else\n        echo \"error: Failed to Download Tools Library. Please ensure you have an active Internet connection.\"\n        return 1\n    fi\nfi\n\n\n#APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\n#find \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\n#do\n#FRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\n#FRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\n#echo \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\n#EXTRACTED_ARCHS=()\n\n#for ARCH in $ARCHS\n#do\n#echo \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\n#lipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\n#EXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\n#done\n\n#echo \"Merging extracted architectures: ${ARCHS}\"\n#lipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\n#rm \"${EXTRACTED_ARCHS[@]}\"\n\n#echo \"Replacing original executable with thinned version\"\n#rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n#mv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\n#done\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

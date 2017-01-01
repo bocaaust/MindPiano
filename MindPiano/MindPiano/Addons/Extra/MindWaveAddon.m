@@ -1078,6 +1078,7 @@ BOOL bBlink = NO;
     // we use real mindwave headset on iOS device
     [[TGStream sharedInstance] setDelegate:self];
     [[TGStream sharedInstance] initConnectWithAccessorySession];
+    [[NskAlgoSdk sharedInstance] startProcess];
     #endif
     
     CODEA_ADDON_REGISTER(MINDWAVE_LIB_NAME, luaopen_mindwave);
