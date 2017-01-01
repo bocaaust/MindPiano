@@ -569,7 +569,7 @@ int rawCount = 0;
     if (deviceType != DEVICE_TYPE_MindWaveMobile) {
         return;
     }
-    datatype = MindDataType_CODE_ATTENTION
+   // datatype = MindDataType_CODE_ATTENTION
     switch (datatype) {
             
         case MindDataType_CODE_POOR_SIGNAL:
@@ -609,7 +609,7 @@ int rawCount = 0;
             attention[0] = (int16_t)data;
             [[NskAlgoSdk sharedInstance] dataStream:NskAlgoDataTypeAtt data:attention length:1];
         }
-            //NSLog(@"%@\n CODE_ATTENTION %d\n",[self NowString],data);
+            NSLog(@"%@\n CODE_ATTENTION %d\n",[self NowString],data);
             break;
             
         case MindDataType_CODE_MEDITATION:
@@ -1089,7 +1089,9 @@ static int mindwave_attention(struct lua_State* L)
  //     [[NskAlgoSdk sharedInstance] startProcess];
     //attAlgoIndex();
    // lAttention = [att_index floatValue];
+    //lAttention
     int temp = lAttention;
+   // int temp = attention;
    // int16_t attention;
     //attention[0] = (int16_t)data;
     //int temp =  [[NskAlgoSdk sharedInstance]]->Nsk;
@@ -1104,7 +1106,7 @@ static int mindwave_status(struct lua_State* L) {
 }
 static int mindwave_isBlink(struct lua_State* L)
 {
-    printf("%d\n", bBlink);
+    //printf("%d\n", bBlink);
     lua_pushboolean(L, bBlink);
     if (bBlink) {
         bBlink = NO;

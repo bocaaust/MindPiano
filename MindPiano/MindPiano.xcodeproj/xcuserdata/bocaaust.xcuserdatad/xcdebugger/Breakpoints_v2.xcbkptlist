@@ -24,11 +24,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MindPiano/Addons/Extra/MindWaveAddon.m"
-            timestampString = "504927228.19774"
+            timestampString = "504927890.561647"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1116"
-            endingLineNumber = "1116"
+            startingLineNumber = "1119"
+            endingLineNumber = "1119"
             landmarkName = "@implementation MindWaveAddon"
             landmarkType = "3">
          </BreakpointContent>
