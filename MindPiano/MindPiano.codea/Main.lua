@@ -61,7 +61,7 @@ end
 
 
 function touched(touch)
-    if touch.state == ENDED or os.didifftime(os.time(),touches[2][touch.id]) > 3 then
+    if touch.state == ENDED then
         -- When any touch ends, remove it from
         --  our table
         touches[1][touch.id] = nil
@@ -73,6 +73,12 @@ function touched(touch)
         touches[1][touch.id] = touch
         touches[2][touch.id] = os.time()
     end
+    if touches[2][touch.id] ~= nil then
+   if os.difftime(os.time(),touches[2][touch.id]) > 3 then
+        touches[2][touch.id] = nil
+        touches[1][touch.id] = nil
+    end
+        end
 end
 
 function countWhite()
